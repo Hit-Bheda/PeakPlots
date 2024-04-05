@@ -1,0 +1,138 @@
+/* Importing Fonts */
+
+@font-face {
+    font-family: Regular;
+    src: url(../../public/Fonts/KyivTypeTitling-Regular.otf);
+}@font-face {
+    font-family: Regular2;
+    src: url(../../public/Fonts/KyivTypeTitling-Regular2.otf);
+}
+
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Regular;
+}html,body{
+    width: 100%;
+    height: 100%;
+}.main{
+    background: #F6F1F1;
+}
+
+/* NavBar Styles */
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px 50px;
+}.logo{
+    color: #F6F1F1;
+}.nav-items>a{
+    text-decoration: none;
+    color: #F6F1F1;
+    padding: 1rem;
+    font-size: .8rem;
+}.nav-items{
+    background: #181823;
+    width: 20rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}.log-btn{
+    padding: .5rem 1rem;
+    background: #F6F1F1;
+    border-radius: 15px;
+}
+
+/* Hero Section Styles */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.bg-box{
+    width: 97%;
+    height: 95%;
+    background: red;
+    border-radius: 15px;
+    position: relative;
+    padding: 1.5rem 2rem;
+}.another-box{
+    width: 30%;
+    height: 15%;
+    background: #F6F1F1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.bg-box{
+    background: url(../../public/bg.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}.another-box>p{
+    font-size: .8rem;
+}.hero-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.hero-text>h1{
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: center;
+    width: 50%;
+    color: #F6F1F1;
+}
+
+/* Page 2 Stles */
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    margin-top: 10vh;
+}.second-title{
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.second-title>h1{
+    text-align: center;
+    font-size: 3rem;
+    width:60%;
+    font-weight:500;
+}
+
+/* PreLoader Styles */
+
+.overlay{
+    position: fixed;
+    z-index: 2;
+    width:99vw;
+    height: 100vh;
+    display: flex;
+}.box{
+    width: 10vw;
+    height: 100vh;
+    background: #181823;
+}
